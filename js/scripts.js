@@ -23,16 +23,18 @@ map.on('style.load', function () {
       'fill-color': {
         property: 'Facilities_per_10K', // this will be your density property form you geojson
         stops: [
-          [1, '#98A5C0'],
-          [1.5, '#86CEFA'],
-          [2, '#73B9EE'],
-          [3, '#5494DA'],
-          [4, '#3373C4'],
-          [5, '#1750AC'],
+          [1, ' #ffd9b3'],
+          [1.5, '#ffbf80'],
+          [2, '#ffa64d'],
+          [3, '#ff8c1a'],
+          [4, '#e67300'],
+          [5, '#cc6600'],
         ]
       },
-      'fill-outline-color': '#ccc',
+      'fill-outline-color': 'black',
       'fill-opacity': .8
     }
   });
+
+
 });
