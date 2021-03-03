@@ -20,9 +20,19 @@ map.on('style.load', function () {
    'source': 'arm_health_facilities',
    'layout': {},
    'paint': {
-     'fill-color': 'grey',
-     'fill-outline-color': '#ccc',
-     'fill-opacity': 0.8
+      'fill-color': {
+        property: 'Facilities_per_10K', // this will be your density property form you geojson
+        stops: [
+          [1, '#98A5C0'],
+          [1.5, '#86CEFA'],
+          [2, '#73B9EE'],
+          [3, '#5494DA'],
+          [4, '#3373C4'],
+          [5, '#1750AC'],
+        ]
+      },
+      'fill-outline-color': '#ccc',
+      'fill-opacity': .8
     }
   });
-})
+});
