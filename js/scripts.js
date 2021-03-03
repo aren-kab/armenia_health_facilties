@@ -6,3 +6,23 @@ var map = new mapboxgl.Map({
   center: [45.12267497723875, 40.27928204045164], // starting position [lng, lat]
   zoom: 7.5 // starting zoom
 });
+
+map.on('style.load', function () {
+  //add geojson
+  map.addSource('arm_health_facilities', {
+     type: 'geojson',
+     data: '/data/arm_health_facilities.geojson'
+   });
+
+ map.addLayer({
+   'id': 'arm_health_facilities',
+   'type': 'fill',
+   'source': 'arm_health_facilities',
+   'layout': {},
+   'paint': {
+     'fill-color': 'grey',
+     'fill-outline-color': '#ccc',
+     'fill-opacity': 0.8
+    }
+  });
+})
