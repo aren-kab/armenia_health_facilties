@@ -35,12 +35,12 @@ html, body, .container, #sidebar, #mapContainer {
   padding-top: 5px;
   padding-left: 10px;
   padding-right: 5px;
-  /* padding: 10px; */
   color: #46473E;
   font-weight: 1500px;
   font-size: 16px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+
 
 .legend{
   background-color: white;
@@ -64,6 +64,18 @@ html, body, .container, #sidebar, #mapContainer {
   padding: 8px;
 }
 
+
 #legend_div{
   margin-left: 32px;
+}
+
+.data_info{
+  margin-top: 220px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 3px;
+  color: #46473E;
+  font-weight: 1500px;
+  font-size: 14px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
