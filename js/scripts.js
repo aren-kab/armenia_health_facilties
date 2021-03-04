@@ -11,7 +11,7 @@ map.on('style.load', function () {
   //add geojson
   map.addSource('arm_health_facilities', {
      type: 'geojson',
-     data: 'data/arm_health_facilities.geojson'
+     data: 'data/arm-health-facilities.geojson'
    });
 
  map.addLayer({
