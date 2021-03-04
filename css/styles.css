@@ -2,6 +2,7 @@ html, body, .container, #sidebar, #mapContainer {
   height: 100%;
   margin: 0;
   background-color: white;
+  font-family: serif;
 }
 
 .container {
