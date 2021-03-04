@@ -35,44 +35,44 @@ map.on('style.load', function () {
       'fill-opacity': .8
     }
   });
-
-  map.addLayer({
-    'id': 'labels',
-    'type': 'symbol',
-    'source': 'arm_health_facilities',
-    'layout': {
-    'text-field': ['get', 'NAME_1'],
-    'text-variable-anchor': ['center'],
-    'text-justify': 'auto'
-    }
-  });
-
-  map.on('click', 'labels', function (e) {
-    var coordinates = e.features[0].properties.coordinates;
-    var description = `
-          <div>
-            <h3>${e.features[0].properties.NL_NAME_1}</h3>
-            <div><strong>Population:</strong> ${e.features[0].properties.Population}</div>
-            <div><strong>Facilities:</strong> ${e.features[0].properties.Facilities_count}</div>
-            <div><strong>Ratio:</strong> ${e.features[0].properties.Facilities_per_10K}</div>
-          </div>
-        `
-
-  new mapboxgl.Popup({offset:[0,-20]})
-    .setHTML(description)
-    .setLngLat(e.lngLat)
-    .addTo(map);
-  });
-
-// Change the cursor to a pointer when the mouse is over the places layer.
-  map.on('mouseenter', 'labels', function () {
-  map.getCanvas().style.cursor = 'pointer';
-  });
-
-  // Change it back to a pointer when it leaves.
-  map.on('mouseleave', 'labels', function () {
-    map.getCanvas().style.cursor = '';
-    });
+//
+//   map.addLayer({
+//     'id': 'labels',
+//     'type': 'symbol',
+//     'source': 'arm_health_facilities',
+//     'layout': {
+//     'text-field': ['get', 'NAME_1'],
+//     'text-variable-anchor': ['center'],
+//     'text-justify': 'auto'
+//     }
+//   });
+//
+//   map.on('click', 'labels', function (e) {
+//     var coordinates = e.features[0].properties.coordinates;
+//     var description = `
+//           <div>
+//             <h3>${e.features[0].properties.NL_NAME_1}</h3>
+//             <div><strong>Population:</strong> ${e.features[0].properties.Population}</div>
+//             <div><strong>Facilities:</strong> ${e.features[0].properties.Facilities_count}</div>
+//             <div><strong>Ratio:</strong> ${e.features[0].properties.Facilities_per_10K}</div>
+//           </div>
+//         `
+//
+//   new mapboxgl.Popup({offset:[0,-20]})
+//     .setHTML(description)
+//     .setLngLat(e.lngLat)
+//     .addTo(map);
+//   });
+//
+// // Change the cursor to a pointer when the mouse is over the places layer.
+//   map.on('mouseenter', 'labels', function () {
+//   map.getCanvas().style.cursor = 'pointer';
+//   });
+//
+//   // Change it back to a pointer when it leaves.
+//   map.on('mouseleave', 'labels', function () {
+//     map.getCanvas().style.cursor = '';
+//     });
 
 
 });
