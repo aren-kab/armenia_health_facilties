@@ -18,11 +18,39 @@ html, body, .container, #sidebar, #mapContainer {
 }
 
 .title{
-  padding: 10px;
+  /* padding: 5px; */
+  text-align: center;
 
 }
+
 .info{
   padding: 10px;
   color: #46473E;
   font-weight: 1500px;
+}
+
+.legend{
+  background-color: white;
+  height: 150px;
+  width: 400px;
+  border: 2px;
+  border-color: black;
+  align: center;
+  position: absolute;
+  margin-top: 40px;
+}
+
+.legend  span {
+  border-radius: 50%;
+  display: table-cell;
+  vertical-align: center;
+  text-align: center;
+  vertical-align: middle;
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+}
+
+#legend_div{
+  margin-left: 32px;
 }
