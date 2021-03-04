@@ -2,7 +2,6 @@ html, body, .container, #sidebar, #mapContainer {
   height: 100%;
   margin: 0;
   background-color: white;
-  font-family: serif;
   overflow: hidden;
 }
 
@@ -12,7 +11,7 @@ html, body, .container, #sidebar, #mapContainer {
 }
 
 #sidebar {
-  background: #D9D9D9;
+  background: #E6E6E6;
   width: 400px;
   position: relative;
 }
@@ -24,24 +23,34 @@ html, body, .container, #sidebar, #mapContainer {
 .title{
   /* padding: 5px; */
   text-align: center;
+  font-size: 32px;
+}
 
+.l_title{
+  /* padding: 5px; */
+  text-align: center;
 }
 
 .info{
-  padding: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+  /* padding: 10px; */
   color: #46473E;
   font-weight: 1500px;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .legend{
   background-color: white;
   height: 150px;
   width: 400px;
-  border: 2px;
+  /* border: 3px inset; */
   border-color: black;
   align: center;
   position: absolute;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .legend  span {
