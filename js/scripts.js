@@ -52,9 +52,7 @@ map.on('style.load', function () {
     var description = `
           <div>
             <h3>${e.features[0].properties.NL_NAME_1}</h3>
-            <div><strong>Population:</strong> ${e.features[0].properties.Population}</div>
-            <div><strong>Facilities:</strong> ${e.features[0].properties.Facilities_count}</div>
-            <div><strong>Ratio:</strong> ${e.features[0].properties.Facilities_per_10K}</div>
+
           </div>
         `
 
